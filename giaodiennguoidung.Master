@@ -29,6 +29,15 @@
             font-weight: bold;
         }
 
+        .input-group-addon {
+            min-width: 140px;
+            text-align: left;
+        }
+
+        .dataListHeader {
+            color: red;
+        }
+
        /* Remove the navbar's default margin-bottom and rounded borders */ 
        .navbar {
          margin-bottom: 0;
