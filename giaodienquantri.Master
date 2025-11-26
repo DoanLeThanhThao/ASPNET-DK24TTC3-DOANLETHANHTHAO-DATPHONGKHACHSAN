@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="giaodienquantri.master.cs" Inherits="aspnet_dk24ttc3_doanlethanhthao_datphongkhachsan.giaodienquantri" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>DU LỊCH BỐN PHƯƠNG</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="/Style/styleadmin.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+            var currentUrl = window.location.pathname;
+            $('.nav-pills li').each(function () {
+                if ($(this).children().attr('href') === currentUrl) {
+                    $('.nav-pills li').removeClass('active');
+                    $(this).addClass('active');
+                }
+            });
+            $('.navbar-nav li').each(function () {
+                if ($(this).children().attr('href') === currentUrl) {
+                    $('.navbar-nav li').removeClass('active');
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+    <style>
+        .gvkhachhang th, .gvdatphong th, .gvtiennghi th {
+            padding: 8px 2px;
+            border-left: 0;
+            border-right: 0;
+        }
+
+        .gvkhachhang td, .gvdatphong td, .gvtiennghi td {
+            padding: 7px 2px;
+            border-left: 0;
+            border-right: 0;
+        }
+      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+      .row.content {height: 550px}
+  
+      /* Set gray background color and 100% height */
+      .sidenav {
+        background-color: #f1f1f1;
+        height: 100%;
+      }
+      
+      /* On small screens, set height to 'auto' for the grid */
+      @media screen and (max-width: 767px) {
+        .row.content {height: auto;} 
+      }  
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/gdqtKhachHang.aspx">DU LỊCH BỐN PHƯƠNG</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/gdqtKhachHang.aspx">Tài khoản</a></li>
+        <li><a href="/gdqtDatPhong.aspx">Đặt phòng</a></li>
+        <li><a href="/gdqtTienNghi.aspx">Tiện nghi</a></li>
+        <li><a href="/DangXuat.aspx">Đăng xuất</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <h3>DU LỊCH BỐN PHƯƠNG</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="/gdqtKhachHang.aspx">Tài khoản</a></li>
+        <li><a href="/gdqtDatPhong.aspx">Đặt phòng</a></li>
+        <li><a href="/gdqtTienNghi.aspx">Tiện nghi</a></li>
+        <li><a href="/DangXuat.aspx">Đăng xuất</a></li>
+      </ul><br>
+    </div>
+    <br>
+    
+    <div class="col-sm-9">
+        <form id="form1" class="form-horizontal" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid text-center">
+  <p>ASPNET - DK24TTC3 - Đoàn Lê Thanh Thảo - Đặt phòng khách sạn © 2025</p>
+</footer>
+</body>
+</html>
