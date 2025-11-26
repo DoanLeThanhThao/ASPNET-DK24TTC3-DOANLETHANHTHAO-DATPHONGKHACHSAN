@@ -36,3 +36,9 @@ Trong bối cảnh ngành du lịch và khách sạn đang phát triển mạnh 
 - Đoàn Lê Thanh Thảo - Lớp: DK24TTC3
 #### Thông tin phiên bản:
 - Phiên bản cập nhật vào ngày 06/11/2025
+#### Kiến thức áp dụng
+- ASP.NET
+- SQL SERVER
+- HTML
+- CSS
+- BOOTSTRAP
