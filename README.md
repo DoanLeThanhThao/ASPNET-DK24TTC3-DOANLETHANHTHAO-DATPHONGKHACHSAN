@@ -35,4 +35,4 @@ Trong bối cảnh ngành du lịch và khách sạn đang phát triển mạnh 
 #### Tác giả:
 - Đoàn Lê Thanh Thảo - Lớp: DK24TTC3
 #### Thông tin phiên bản:
-- Phiên bản cập nhật vào ngày 05/11/2025
+- Phiên bản cập nhật vào ngày 06/11/2025
