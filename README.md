@@ -1,4 +1,4 @@
-# ĐỒ án môn học: Chuyên đề ASP.NET
+# Đồ án môn học: Chuyên đề ASP.NET
 ## Xây dựng website đặt phòng khách sạn
 Trong bối cảnh ngành du lịch và khách sạn đang phát triển mạnh mẽ, nhu cầu đặt phòng trực tuyến ngày càng tăng cao. Khách hàng mong muốn sự tiện lợi, nhanh chóng và đa dạng lựa chọn khi tìm kiếm và đặt phòng. Một website đặt phòng khách sạn hiệu quả không chỉ giúp khách hàng dễ dàng tiếp cận các dịch vụ mà còn tối ưu hóa quy trình quản lý cho các cơ sở lưu trú. Đề tài "Xây dựng website đặt phòng khách sạn" nhằm mục tiêu phát triển một nền tảng trực tuyến toàn diện, đáp ứng nhu cầu của cả khách hàng và các đơn vị khách sạn.
 ### Mục tiêu phát triển của dự án
